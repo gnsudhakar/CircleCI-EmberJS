@@ -2,8 +2,7 @@ version: 2.1 # Upgrading to 2.1 allows for better features, though 2.0 still wor
 jobs:
   build:
     docker:
-      # Use a modern Node version (e.g., 18 or 20)
-      - image: cimg/node:14.21-browsers 
+      - image: cimg/node:12.22-browsers 
         environment:
           CHROME_BIN: "/usr/bin/google-chrome"
     steps:
